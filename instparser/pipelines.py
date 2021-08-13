@@ -24,4 +24,5 @@ class InstparserPipeline:
         return item
 
     def __del__(self):
+        print('__del__')
         self.mb_client.close() # ВОПРОС: Почему с этим вызовом программа зависает на выходе?
